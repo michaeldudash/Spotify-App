@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Social Spotify</Title>
+    <link rel='stylesheet' href='index.css'>
+    </link>
+</head>
+
+<body>
+    <div id='header-container'>
+        <h1>Create a Static Playlist</h1>
+    </div>
+    <div id='login-container'>
+        <a href="/login">Log In with Spotify</a>
+    </div>
+
+    <div id="start-type-container">
+        <h4>Choose where to start your new playlist:</h4>
+        <form id="playlist-start-type-form">
+            <label for="start-type">Start from a(n) </label>
+            <select id="start-type" name="start-type">
+                <option value="artist">artist</option>
+                <option value="track">track</option>
+                <option value="genre">genre</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="start-artist-container">
+        <h4>Choose an artist to start from:</h4>
+        <form id="start-artist-search">
+            <label for="start-artist">Search for an artist </label>
+            <input id="start-artist" type="text"><br>
+        </form>
+
+        <div id="start-artist-search-results"></div>
+
+        <button id="start-artist-submit">Start</button>
+    </div>
+
+    <div id="start-track-container">
+        <h4>Choose a track to start from:</h4>
+        <form id="start-track-search">
+            <label for="start-track">Search for a track </label>
+            <input id="start-track" type="text"><br>
+            <button id="start-track-submit">Start</button>
+        </form>
+    </div>
+
+    <div id="start-genre-container">
+        <h4>Choose a genre to start from:</h4>
+        <form id="start-genre-search">
+            <label for="start-genre">Search for a genre </label>
+            <input id="start-genre" type="text"><br>
+            <button id="start-genre-submit">Start</button>
+        </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="static_playlist.js"></script>
+
+</body>

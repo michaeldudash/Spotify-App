@@ -1,0 +1,9 @@
+#login-container {
+    position: fixed;
+    top: 0;
+    right: 10px;
+}
+
+#playlist-creator-container {
+    display: none;
+}
